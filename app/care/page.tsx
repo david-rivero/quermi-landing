@@ -1,31 +1,11 @@
 import React from 'react';
 
+import Hero from './components/Hero';
+
 const CarePage: React.FC = () => {
   return (
     <>
-      <div id="hero" className="hero inset-0 -z-10 h-screen w-screen bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
-        <div className="header">
-          <div className="header__icon"></div>
-          <div className="header__menu">
-            <ul className="flex">
-              <li>Features</li>
-              <li>Steps</li>
-              <li>Pricing</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <div className="header__cta">
-            <button>Start using</button>
-          </div>
-        </div>
-        <div className="hero-content">
-          <div className="hero-content__left">
-            <h1>Caring at the palm of your hand</h1>
-            <p>Install Quermi in your phone and start taking care of the people you love most</p>
-          </div>
-          <div className="hero-content__right"></div>
-        </div>
-      </div>
+      <Hero />
       <section>
         <div id="feature">
           <div>
