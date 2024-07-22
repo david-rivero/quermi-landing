@@ -1,7 +1,9 @@
 import React from 'react';
 
-import Footer from '@/app/common/components/Footer';
-import Hero from '@/app/common/components/Hero';
+import {
+  Hero,
+  Footer,
+} from '@/app/common/components';
 
 const ToS: React.FC = () => {
   return (
