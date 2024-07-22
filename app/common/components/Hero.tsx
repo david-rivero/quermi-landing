@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-import Header from './Header';
+import { Header } from './Header';
 
 interface HeroProps {
   extraClassNames?: string;
