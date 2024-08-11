@@ -7,9 +7,14 @@ import SearchIcon from '@/public/icons/search.svg';
 import CalendarIcon from '@/public/icons/calendar-month.svg';
 import RateReview from '@/public/icons/rate-review.svg';
 
-export const Features: React.FC = () => {
+interface FeaturesProps {
+  bgColor?: string;
+}
+
+export const Features: React.FC<FeaturesProps> = ({ bgColor = 'q-primary' }) => {
+  const componentClassName = `py-24 bg-${bgColor} text-q-background`;
   return (
-    <div id="feature" className="py-16 bg-q-primary text-q-background">
+    <div id="features" className={componentClassName}>
       <div>
         <p className="text-center">Find caregivers safer and faster</p>
         <SectionTitle>The platform you were looking for</SectionTitle>

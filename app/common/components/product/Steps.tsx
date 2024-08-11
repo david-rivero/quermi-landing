@@ -12,7 +12,7 @@ import DigitalWellbeing from '@/public/icons/digital-wellbeing.svg';
 
 export const Steps: React.FC = () => {
   return (
-    <div id="steps" className="py-16 bg-q-background">
+    <div id="steps" className="py-24 bg-q-background">
       <SectionTitle>Start using Quermi now</SectionTitle>
       <div className="flex items-center">
         <div className="w-[25vw] m-auto">
