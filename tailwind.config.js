@@ -14,6 +14,8 @@ module.exports = {
         'q-accent': '#443dff',
         'q-footer': '#40315C',
         'q-second': '#E85341',
+        'q-third': '#7E3572',
+        'q-fourth': '#E84168',
       },
     },
     fontFamily: {
