@@ -8,7 +8,7 @@ import {
 const ToS: React.FC = () => {
   return (
     <>
-      <Hero extraClassNames="inset-0 -z-10 h-screen w-screen bg-q-second text-q-background" whiteMode={true}>
+      <Hero extraClassNames="inset-0 -z-10 h-screen w-screen bg-q-second text-q-background" whiteMode={true} showMenu={false}>
         <div className="h-full flex items-center justify-center">
           <h1 className="text-5xl text-center font-bold mb-5 font-['Raleway_Bold'] text-q-background">Terms of Service</h1>
         </div>
