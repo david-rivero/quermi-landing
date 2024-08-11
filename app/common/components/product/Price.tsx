@@ -10,15 +10,17 @@ interface PriceProps {
   bgColor?: string;
   color?: string;
   lightMode?: boolean;
+  borderColor?: string;
 }
 
-export const Price: React.FC<PriceProps> = ({ bgColor = 'background-v2', color = 'q-text', lightMode = false }) => {
-  const componentClassName = `py-24 bg-q-${bgColor} text-${color}`;
+export const Price: React.FC<PriceProps> = ({ bgColor = 'bg-q-background-v2', color = 'text-q-text', borderColor = 'border-q-text', lightMode = false }) => {
+  const componentClassName = `py-24 ${bgColor} ${color}`;
+
   return (
     <div id="pricing" className={componentClassName}>
       <SectionTitle>Choose the right plan for you</SectionTitle>
       <div className="flex justify-center">
-        <div className={`w-80 p-4 border border-${color} rounded-lg mr-6`}>
+        <div className={`w-80 p-4 border ${borderColor} rounded-lg mr-6`}>
           <p className="font-['Raleway_Bold'] text-lg">Basic</p>
           <p className="text-xs">Ideal for your first plan</p>
           <div className="mt-4 mb-8 h-20">
@@ -38,7 +40,7 @@ export const Price: React.FC<PriceProps> = ({ bgColor = 'background-v2', color =
             </ul>
           </div>
         </div>
-        <div className={`w-80 p-4 border border-${color} rounded-lg`}>
+        <div className={`w-80 p-4 border ${borderColor} rounded-lg`}>
           <p className="font-['Raleway_Bold'] text-lg">Premium</p>
           <p className="text-xs">For customers with several requirements</p>
           <div className="mt-4 mb-8 h-20">

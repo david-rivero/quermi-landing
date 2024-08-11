@@ -21,7 +21,7 @@ const CareGiversPage: React.FC = () => {
       <section>
         <Features bgColor="q-second" />
         <Steps />
-        <Price bgColor="fourth" color="q-background" lightMode={true} />
+        <Price bgColor="bg-q-fourth" color="text-q-background" borderColor="border-q-background" lightMode={true} />
         <CTA bgColor="bg-q-second" />
       </section>
       <Footer />
